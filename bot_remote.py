@@ -20,7 +20,7 @@ async def on_ready():
     print(f'Logged in as {bot.user.name}')
 
 @bot.command()
-async def toggle_view(ctx, channel_id: int):
+async def toggle_view(ctx, channel: discord.TextChannel):
     channel = bot.get_channel(channel_id)
     if channel is None:
         await ctx.send("Канал не найден.")
