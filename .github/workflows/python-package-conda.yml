@@ -34,4 +34,4 @@ jobs:
           TOKEN: ${{ secrets.TOKEN }}
         run: |
           pip install -r requirements.txt
-          python script_remote.py
+          python bot_remote.py
