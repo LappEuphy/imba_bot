@@ -3,7 +3,7 @@ from discord.ext import commands
 
 # Конфигурация бота
 config = {
-    'token': os.environ["TOKEN"],
+    'token': '...',
     'prefix': '!',
 }
 
