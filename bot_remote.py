@@ -31,7 +31,7 @@ async def toggle_view(ctx, channel_id: int):
     # Меняем право просмотра канала
     overwrites.view_channel = not overwrites.view_channel
     await channel.set_permissions(ctx.guild.default_role, overwrite=overwrites)
-    await ctx.send(f"Право просмотра канала {'включено' if overwrites.view_channel else 'выключено'}.")
+    await ctx.send(f"Просмотр канала {'включён' if overwrites.view_channel else 'выключен'}.")
 
 # Запуск бота
 bot.run(config['token'])
