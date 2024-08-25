@@ -4,7 +4,7 @@ import os
 
 # Конфигурация бота
 config = {
-    'token': os.environ["DISCORD_TOKEN"],
+    'token': os.getenv["DISCORD_TOKEN"],
     'prefix': '!',
 }
 
